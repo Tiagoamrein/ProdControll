@@ -1,0 +1,28 @@
+{
+  "name": "controll-app-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiagoamrein/ProdControll.git"
+  },
+  "author": "Tiago Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiagoamrein/ProdControll/issues"
+  },
+  "homepage": "https://github.com/Tiagoamrein/ProdControll#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
