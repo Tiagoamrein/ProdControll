@@ -26,7 +26,7 @@ app.use((error, request, response, next) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Voce deu get')
 })
 
 app.post('/machine', (req, res)=>{
