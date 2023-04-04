@@ -2,9 +2,12 @@ require("express-async-errors")
 const express = require("express")
 const AppError = require("./utils/AppError")
 const bodyParser = require("body-parser")
+const cors = require("cors")
 const app = express()
-const port = 3334
 
+
+const port = 3334
+app.use(cors())
 app.use(express.json()) 
 app.use(bodyParser.json());
 
@@ -34,6 +37,7 @@ app.post('/machine', (req, res)=>{
   
   console.log("o id é", id)
   console.log("o name é", name)
+  console.log("bombou")
   return res.status(201).json()
   
   
